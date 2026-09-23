@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-/** STATEMENT OF AUTHORSHIP
+﻿/** MODEL CLASS 
+ * -class for employee objects
+ * 
+ * 
+ * STATEMENT OF AUTHORSHIP
  * 
  * I, 000964569, Neil Patrick Olaires hereby declare that this
  * is my own work and i have not shared this work with anyone 
  * or have even used ai for this program
  */
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Assignment1
 {
@@ -41,14 +45,14 @@ namespace Assignment1
         public Employee(string name, int number, decimal rate, double hours)
         {
             this.name = name;
-            if (number < 0)
+            if (number >= 0)
             {
                 this.number = number; //id cant be negative 
             }
-            if (rate < 0) { 
+            if (rate >= 0) { 
                 this.rate = rate; // rate cant be negative
             }
-            if (hours < 0)
+            if (hours >= 0)
             {
                 this.hours = hours; //hours cant be negative
             }
@@ -93,7 +97,7 @@ namespace Assignment1
         /** ToString [returns, formatted string]*/
         public override string ToString()
         {
-            return "this is a normal to string";
+            return $"{name} \t\t {number} \t ${rate:f2} \t {hours:F2} \t\t ${this.GetGross():F0}";
         }
 
 
