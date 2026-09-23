@@ -8,3 +8,11 @@ D:\NET (C#)\Week 2\Assignment 1\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assi
 D:\NET (C#)\Week 2\Assignment 1\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
 D:\NET (C#)\Week 2\Assignment 1\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.exe
 D:\NET (C#)\Week 2\Assignment 1\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\employees.txt
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.pdb

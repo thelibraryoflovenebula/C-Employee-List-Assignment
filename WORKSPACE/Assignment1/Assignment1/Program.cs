@@ -17,27 +17,19 @@ namespace Assignment1
     
     internal class Program
     {
-        /// <summary>
-        /// STORED employee.txt PATH INTO STRING
-        /// csv -> comma seperated values
-        /// </summary>
+
+        //store file path of .csv into string variable =
         const string DATAFILE = "employees.txt";
 
-        /// <summary>
-        /// INITIALIZED EMPLOYEE ARRAY 
-        /// 
-        /// 1. new size reefined every entry-consoleclear
-        /// </summary>
+        //initialize employee array
         Employee[] employeeList;
 
 
-        /// <summary>
-        /// MAIN METHOD -> VIEW CLASS
-        /// 
-        /// Program method -> association with Employee class
-        /// (Program has * employees)
-        /// </summary>
-        /// <param name="args"></param>
+
+        /** 
+         * Main Method 
+         * (association employee class [*])
+         */
         static void Main(string[] args)
         {
             
@@ -64,9 +56,10 @@ namespace Assignment1
                     "\n[E] Sort by employee gross pay\t (desc)" +
                     "\n[X] Exit");
 
+                //reads option input
                 string option = Console.ReadLine();
 
-                switch (option)
+                switch (option.ToUpper())
                 {
                     //SORT NAME
                     case ("A"):
@@ -98,12 +91,14 @@ namespace Assignment1
 
                 }
 
+                //after break, before while loops re-enters
                 Console.WriteLine("\nPress any key to continue...");
-            }//END OF WHILE LOOP
+                Console.ReadKey();
+
+
+            }
 
             Console.WriteLine("Have a nice day!");
-
-
         }
 
 
@@ -112,11 +107,13 @@ namespace Assignment1
 
 
 
-        /// <summary>
-        /// READ METHOD TO COUNT AND INSERT EMPLOYEES INTO ARRAY
-        /// ***has exception checking (try catch)
-        /// 
-        /// </summary>
+        /**
+         * READ METHOD TO COUNT AND INSERT EMPLOYEES INTO ARRAY
+         * ***has exception checking (try catch)
+         * 
+         * 
+         * 
+         */
         public void readEmployees()
         {
             try {
@@ -149,9 +146,9 @@ namespace Assignment1
             }
         }
 
-        /// <summary>
-        /// PRINTS THE ARRAY OF EMPLOYEES CREATED BY THE READ METHOD
-        /// </summary>
+        /**
+         * PRINTS THE ARRAY OF EMPLOYEES CREATED BY THE READ METHOD
+         */
         public void printEmployees()
         {
 
