@@ -12,6 +12,11 @@ using System.Threading.Tasks;
  * or have even used ai for this program
  */
 
+/** CHECK INS
+ *  sept 22 3:01pm
+ *  sept 23 12:30pm
+ */
+
 namespace Assignment1
 {
     
@@ -33,7 +38,7 @@ namespace Assignment1
         static void Main(string[] args)
         {
             
-
+            //part where you initialize array stuff
 
 
 
@@ -49,11 +54,11 @@ namespace Assignment1
             {
                 Console.Clear();//clears console
                 Console.WriteLine("Select a menu item:" +
-                    "\n[A] Sort by employee name \t(asc)" +
-                    "\n[B] Sort by employee number \t(asc)" +
-                    "\n[C] Sort by employee pay rate \t(desc)" +
-                    "\n[D] Sort by employee hours \t(desc)" +
-                    "\n[E] Sort by employee gross pay\t (desc)" +
+                    "\n[A] ↑ Sort by employee name" +
+                    "\n[B] ↑ Sort by employee number " +
+                    "\n[C] ↓ Sort by employee pay rate" +
+                    "\n[D] ↓ Sort by employee hours" +
+                    "\n[E] ↓ Sort by employee gross pay" +
                     "\n[X] Exit");
 
                 //reads option input
@@ -104,54 +109,25 @@ namespace Assignment1
 
 
 
-
-
-
-        /**
-         * READ METHOD TO COUNT AND INSERT EMPLOYEES INTO ARRAY
-         * ***has exception checking (try catch)
-         * 
-         * 
-         * 
-         */
-        public void readEmployees()
-        {
-            try {
-                StreamReader reader = new StreamReader(DATAFILE);
-                while(!reader.EndOfStream)
-                {
-                    //columnAttribute = reader.ReadLine().Split(',');
-
-
-
-                }
-
-
-
-            } catch (Exception ex)
-            {
-                Console.Error.WriteLine("Error reading the file: " + ex.Message);
-            }
-
-        }
-
-        public void readSize()
-        {
-            try
-            {
-
-            }catch(Exception ex)
-            {
-                Console.Error.WriteLine("Error reading the file: " + ex.Message);
-            }
-        }
-
-        /**
-         * PRINTS THE ARRAY OF EMPLOYEES CREATED BY THE READ METHOD
-         */
-        public void printEmployees()
-        {
-
-        }
     }
 }
+
+
+
+
+/** TO DO LIST
+ * 1. Make formatted ToString for employee objects 
+ * 2. (LEARN) insert information in .csv into array (multi dimensional array)
+ * 3. Make print method for array
+ * 4. (LEARN) sorting method(s) for each option 
+ */
+
+
+
+
+/**
+ * Lab should have
+ * 1. read method -> puts all info into array (exception check)
+ * 2. sort method(s)
+ * 3. main method is highly modularized
+ */
