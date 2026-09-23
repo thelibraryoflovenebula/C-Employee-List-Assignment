@@ -15,40 +15,29 @@ namespace Assignment1
 {
     internal class Employee
     {
-        // ATTRIBUTES
+    //ATTRIBUTES
 
 
-        /// <summary>
-        /// Employee name
-        /// </summary>
+        /** name variable*/
         private string name;
-        /// <summary>
-        ///  Employee number
-        /// </summary>
+        /** employee number */
         private int number;
-        /// <summary>
-        /// Employee rate, pay
-        /// </summary>
+        /** employee rate */
         private decimal rate;
-        /// <summary>
-        /// Number of hours employee works -> this is a double
-        /// </summary>
+        /** number of hours an employee works */
         private double hours;
 
-
-
-
-
-        //CONSTRUCTOR
-
-        /// <summary>
-        /// Constructor for employee
-        /// 
-        /// </summary>
-        /// <param name="name"> name of the employee</param>
-        /// <param name="number"> the employee id number</param>
-        /// <param name="rate"> rate of their pay </param>
-        /// <param name="hours">number of hours an employee works</param>
+        /** constructor
+         * 
+         *      params:
+         *      - numbers cant be negative
+         *      
+         *      
+         *      name (string)= name of the employee
+         *      number (int) = employee id number 
+         *      rate (decimal) = rate of their pay
+         *      hours (double) = number of hours an employee works
+         */
         public Employee(string name, int number, decimal rate, double hours)
         {
             this.name = name;
@@ -65,11 +54,16 @@ namespace Assignment1
             }
         }
 
-        //GETTERS AND SETTERS 
+    //METHODS
+
+        /** getter for employee hours [returns, int employee hours]*/
         public double GetHours(){return this.hours;}
+        /** getter for employee name [returns, string employee name]*/
         public string GetName(){return this.name;}
+        /** getter for employee rate [returns, decimal employee rate ]*/
         public decimal GetRate(){return this.rate;}
 
+        /** getter and calculator for employee gross incoming  [returns, decimal employee gross income]*/
         public decimal GetGross()
         {
             if (this.hours > 40) // in the case of overtime
@@ -87,21 +81,16 @@ namespace Assignment1
             }
         }
 
+        /** setter for employee hours */
         public void SetHours(double hours){this.hours = hours;}
+        /** setter for employee name */
         public void SetName(string name){this.name = name;}
+        /** setter for employee number */
         public void SetNumber(int number){this.number = number;}
+        /** setter for employee rate  */
         public void SetRate(decimal rate){this.rate = rate;}
 
-
-
-
-
-
-
-
-
-
-        //TO STRING
+        /** ToString [returns, formatted string]*/
         public override string ToString()
         {
             return "this is a normal to string";
