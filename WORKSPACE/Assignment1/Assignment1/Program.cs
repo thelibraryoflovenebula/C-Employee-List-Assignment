@@ -218,21 +218,7 @@ namespace Assignment1
 
 
 
-/**
- * Lab should have
- * 1. read method -> puts all info into array (exception check)
- * 2. sort method(s)
- * 3. main method is highly modularized
- */
-
-
-
-/**
+/** NOTES FOR NEXT PATRICK
  * 
- * TYPES OF WAYS TO INITIALIZE ARRAY
-string[] array = new string[2]; // creates array of length 2, default values
-string[] array = new string[] { "A", "B" }; // creates populated array of length 2
-string[] array = { "A" , "B" }; // creates populated array of length 2
-string[] array = new[] { "A", "B" }; // creates populated array of length 2
-string[] array = ["A", "B"]; // creates populated array of length 2
+ * - sorting you just have to work on
  */

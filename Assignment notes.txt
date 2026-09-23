@@ -12,7 +12,7 @@ Makes use of a class called Employee which stores the information for one single
 
 ✅You must use the methods in the UML diagram - You may not use class properties
 
-Reads the data in this csv employees.txt data file (right-click to save file) into an array of your Employee class
+✅ Reads the data in this csv employees.txt data file (right-click to save file) into an array of your Employee class
 
 There can potentially be any number of records in the data file up to a maximum of 100
 
@@ -26,16 +26,16 @@ Sort by Employee Hours (descending)
 Sort by Employee Gross Pay (descending)
 Exit
 
-Displays a neat, orderly table of all five items of employee information in the appropriate sort order, properly formatted
+✅Displays a neat, orderly table of all five items of employee information in the appropriate sort order, properly formatted
 
 Continues to prompt until the user selects the exit option
 
 --------------------------------------------
 The main class (Lab1) should have the following features:
 
-A Read() method that reads all employee information into the array and has exception checking
+✅A Read() method that reads all employee information into the array and has exception checking
 
-Error checking for user input
+✅Error checking for user input
 
 A Sort() method other than a Bubble Sort algorithm (You must research, cite and code your own sort algorithm - not just use an existing class method) 
 
@@ -48,9 +48,9 @@ The Main() method should be highly modularized
 
 ✅The Employee class should include proper data and methods as provided by the given UML class diagram to the right
 
-No input or output should be done by any part of the Employee class itself
+✅No input or output should be done by any part of the Employee class itself
 
 ✅Gross Pay is calculated as rate of pay * hours worked and after 40 hours overtime is at time and a half
 
-Where you calculate the gross pay is important, as the data in the Employee class should always be accurate
+✅Where you calculate the gross pay is important, as the data in the Employee class should always be accurate
 
