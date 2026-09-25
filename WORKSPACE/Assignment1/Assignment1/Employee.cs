@@ -76,7 +76,7 @@ namespace Assignment1
             {
                 decimal overtimeHours = (decimal)(this.hours - 40)*(decimal)1.5; //store time and a half hours
 
-                decimal normalGross = (decimal)this.hours * this.rate;
+                decimal normalGross = (decimal)40 * this.rate;
                 decimal excessGross = overtimeHours * this.rate;
                 return normalGross + excessGross;               //calculate normal gross and add excess gross for full gross
 
