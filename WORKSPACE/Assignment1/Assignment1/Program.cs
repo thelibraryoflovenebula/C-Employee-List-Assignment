@@ -7,11 +7,16 @@
  * I, 000964569, Neil Patrick Olaires hereby declare that this
  * is my own work and i have not shared this work with anyone 
  * or have even used ai for this program
+ * 
+ * 
+ * SELECTION SORT METHOD USED : https://www.youtube.com/watch?v=EwjnF7rFLns
+ * 
  */
 
 /** CHECK INS
  *  sept 22 3:01pm
  *  sept 23 12:30pm
+ *  sept 25 12:57am
  */
 
 using System;
@@ -72,22 +77,32 @@ namespace Assignment1
                 {
                     //SORT NAME
                     case ("A"):
+                        sort("A", employeeList);
+                        Console.WriteLine(">>> Table sorted by ascending names");
                         break;
 
                     //SORT NUMBER
                     case ("B"):
+                        sort("B", employeeList);
+                        Console.WriteLine(">>> Table sorted by ascending ID");
                         break;
 
                     //SORT PAYRATE
                     case ("C"):
+                        sort("C", employeeList);
+                        Console.WriteLine(">>> Table sorted by descending payrate");
                         break;
 
                     //SORT HOURS
                     case ("D"):
+                        sort("D", employeeList);
+                        Console.WriteLine(">>> Table sorted by descending hours ");
                         break;
 
                     //SORT GROSS PAY
                     case ("E"):
+                        sort("E", employeeList);
+                        Console.WriteLine(">>> Table sorted by descending gross pay ");
                         break;
 
                     //EXIT
@@ -95,13 +110,13 @@ namespace Assignment1
                         running = false;
                         break;
                     default:
-                        Console.WriteLine("Invalid input... ");
+                        Console.WriteLine(">>> Invalid input... ");
                         break;
 
                 }
 
                 //after break, before while loops re-enters
-                Console.WriteLine("\nPress any key to continue...");
+                Console.WriteLine(">>> Press any key to continue...");
                 Console.ReadKey();
 
 
@@ -142,9 +157,9 @@ namespace Assignment1
                     var values = line.Split(','); //splits the single line into array by ','
 
                     string nameTemp = values[0];
-                    int numberTemp;
-                    decimal rateTemp;
-                    double hoursTemp;
+                    int numberTemp; //value1
+                    decimal rateTemp; //value2
+                    double hoursTemp; //value3
 
                     //INPUT VALIDATION FOR .csv FILE 
                     bool parseFail = false; //IF ANY PARSE ATTEMPTS FAIL, SWITCH THIS ON TO ADD ERROR
@@ -196,9 +211,127 @@ namespace Assignment1
             Console.WriteLine("\n");
         }
 
+        public static void sort(string option, Employee[] list)
+        {
+            /**
+             * 
+             *   string nameTemp = values[0];
+             *   int numberTemp; //value1
+             *   decimal rateTemp; //value2
+             *   double hoursTemp; //value3
+             * 
+             */
+            switch (option.ToUpper())
+            {
+                case "A": //name
+                    for (int i = 0; i < list.Length; i++)
+                    {
+                        Employee min; //i
+                        Employee temp; //j 
 
+                        for (int j = i + 1; j < list.Length; j++)
+                        {
+                            int order = string.Compare(list[i].GetName(), list[j].GetName(), StringComparison.Ordinal); //https://learn.microsoft.com/en-us/dotnet/api/system.string.compare?view=net-10.0
 
+                            if (order > 0)  // ASSCENDING
+                            {
+                                min = list[j];
+                                temp = list[i];
+                                list[i] = min;
+                                list[j] = temp;
+                            }
+                        }
+                    }
+                    break;
+                case "B": //number int
+                    for (int i = 0; i < list.Length; i++)
+                    {
+                        int minTemp;
+                        Employee min;
+                        Employee temp;
 
+                        for (int j = i + 1; j < list.Length; j++)
+                        {
+                            minTemp = list[i].GetNumber();
+                            if (minTemp > list[j].GetNumber())  // ASSCENDING
+                            {
+                                min = list[j]; 
+                                temp = list[i];
+                                list[i] = min; 
+                                list[j] = temp; 
+                            }
+                        }
+                    }
+                    break;
+                case "C": //payrate decimal
+                    for (int i = 0; i < list.Length; i++)
+                    {
+                        decimal minTemp;
+                        Employee min;
+                        Employee temp;
+
+                        for (int j = i + 1; j < list.Length; j++)
+                        {
+                            minTemp = list[i].GetRate();
+                            if (minTemp < list[j].GetRate()) // DESCENDING
+                            {
+                                min = list[j]; 
+                                temp = list[i]; 
+                                list[i] = min; 
+                                list[j] = temp;
+                            }
+                        }
+                    }
+
+                    break;
+                case "D": ///hours double
+
+                    for (int i = 0; i < list.Length; i++)
+                    {
+                        double minTemp;
+                        Employee min;
+                        Employee temp;
+
+                        for (int j = i + 1; j < list.Length; j++)
+                        {
+                            minTemp = list[i].GetHours();
+                            if (minTemp < list[j].GetHours())  // DESCENDING
+                            {
+                                min = list[j]; 
+                                temp = list[i];
+                                list[i] = min; 
+                                list[j] = temp; 
+                            }
+                        }
+                    }
+                    break;
+                case "E": //gross pay decimal
+
+                    for (int i = 0; i < list.Length; i++)
+                    {
+                        decimal minTemp;
+                        Employee min;
+                        Employee temp;
+
+                        for (int j = i + 1; j < list.Length; j++)
+                        {
+                            minTemp = list[i].GetGross();
+                            if (minTemp < list[j].GetGross())  // DESCENDING
+                            {
+                                min = list[j];
+                                temp = list[i];
+                                list[i] = min;
+                                list[j] = temp;
+                            }
+                        }
+                    }
+                    break;
+
+            }
+        }
+
+        
+            
 
 
     }
@@ -221,4 +354,5 @@ namespace Assignment1
 /** NOTES FOR NEXT PATRICK
  * 
  * - sorting you just have to work on
+ * - Selection method
  */

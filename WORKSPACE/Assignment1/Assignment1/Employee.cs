@@ -62,6 +62,8 @@ namespace Assignment1
 
         /** getter for employee hours [returns, int employee hours]*/
         public double GetHours(){return this.hours;}
+
+        public int GetNumber() { return this.number; }
         /** getter for employee name [returns, string employee name]*/
         public string GetName(){return this.name;}
         /** getter for employee rate [returns, decimal employee rate ]*/
