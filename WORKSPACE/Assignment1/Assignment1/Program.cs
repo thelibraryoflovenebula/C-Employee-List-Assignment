@@ -24,6 +24,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -137,15 +138,9 @@ namespace Assignment1
             //check if file exists
             if (File.Exists(DATAFILE))
             {
-                //array declaration
-                reader = new StreamReader(File.OpenRead(DATAFILE));
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine(); //accesses a single line
-                    employeeSize++;
-                }
-                reader.Close();
+                declareArray(reader, DATAFILE);
                 employeeList = new Employee[employeeSize];
+
 
 
                 //array initialization of employee csv values
@@ -156,32 +151,15 @@ namespace Assignment1
                     string line = reader.ReadLine(); //accesses a single line
                     var values = line.Split(','); //splits the single line into array by ','
 
-                    string nameTemp = values[0];
-                    int numberTemp; //value1
-                    decimal rateTemp; //value2
-                    double hoursTemp; //value3
+                    string nameTemp =           values[0];
+                    int numberTemp;              //value1
+                    decimal rateTemp;            //value2
+                    double hoursTemp;            //value3
 
                     //INPUT VALIDATION FOR .csv FILE 
                     bool parseFail = false; //IF ANY PARSE ATTEMPTS FAIL, SWITCH THIS ON TO ADD ERROR
 
-                    //number parsing
-                    if (!int.TryParse(values[1], out numberTemp))
-                    {
-                        parseFail = true;
-                        numberTemp = 0;
-                    }
-                    //rate parsing
-                    if (!decimal.TryParse(values[2], out rateTemp))
-                    {
-                        parseFail = true;
-                        rateTemp = 0;
-                    }
-                    //hours parsing
-                    if (!double.TryParse(values[3], out hoursTemp))
-                    {
-                        parseFail = true;
-                        hoursTemp = 0;
-                    }
+                    parseTry(values, parseFail, numberTemp, rateTemp, hoursTemp);
 
                     if (parseFail)
                     {
@@ -195,7 +173,54 @@ namespace Assignment1
             }   else {Console.WriteLine("The file doesn't exist");}
         }
 
-        /** print employees method
+        /** DECLARE ARRAY METHOD 
+         *  first helper method for read() method
+         */
+        private static void declareArray(StreamReader reader, string DATAFILE)
+        {
+            reader = new StreamReader(File.OpenRead(DATAFILE));
+            while (!reader.EndOfStream)
+            {
+                var line = reader.ReadLine(); //accesses a single line
+                employeeSize++;
+            }
+            reader.Close();
+            
+        }
+
+        /** CSV ARRAY PARSING METHOD
+         *  second helper method for read() method
+         */
+        private static void parseTry(bool parseFail, int numberTemp, decimal rateTemp, double hoursTemp)
+        {
+            //number parsing
+            if (!int.TryParse(values[1], out numberTemp))
+            {
+                parseFail = true;
+                numberTemp = 0;
+            }
+
+            //rate parsing
+            if (!decimal.TryParse(values[2], out rateTemp))
+            {
+                parseFail = true;
+                rateTemp = 0;
+            }
+
+            //hours parsing
+            if (!double.TryParse(values[3], out hoursTemp))
+            {
+                parseFail = true;
+                hoursTemp = 0;
+            }
+
+           
+        }
+
+
+
+
+        /** PRINT EMPLOYEE OBJECTS METHOD
          *  
          *  ONLY prints employees from array
          *  array must be initialized and properly done before printed
@@ -211,16 +236,13 @@ namespace Assignment1
             Console.WriteLine("\n");
         }
 
+
+        /** SORTING METHOD 
+         * 
+         * 
+         */
         public static void sort(string option, Employee[] list)
         {
-            /**
-             * 
-             *   string nameTemp = values[0];
-             *   int numberTemp; //value1
-             *   decimal rateTemp; //value2
-             *   double hoursTemp; //value3
-             * 
-             */
             switch (option.ToUpper())
             {
                 case "A": //name
@@ -284,7 +306,7 @@ namespace Assignment1
                     }
 
                     break;
-                case "D": ///hours double
+                case "D": //hours double
 
                     for (int i = 0; i < list.Length; i++)
                     {
@@ -344,8 +366,10 @@ namespace Assignment1
  * 1. ✓ Make formatted ToString for employee objects 
  * 2. ✓ (LEARN) insert information in .csv into array (multi dimensional array)
  * 3. ✓ Make print method for array
- * 4. (LEARN) sorting method(s) for each option 
- * 5. Make new print methods for sorted methods
+ * 4. ✓ (LEARN) sorting method(s) for each option 
+ * 5. ✓ Make new print methods for sorted methods NOTNEEDED
+ * 6. Modularize Read method
+ * 7. Documentation
  */
 
 

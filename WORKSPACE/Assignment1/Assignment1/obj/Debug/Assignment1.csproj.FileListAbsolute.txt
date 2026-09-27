@@ -16,3 +16,19 @@ C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Ass
 C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.exe
 C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
 C:\Users\patri\Desktop\GITHUB PROJECTS\C# Employee List Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\employees.txt
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+D:\NET (C#)\Week 3\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\employees.txt
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+C:\Users\000964569\Downloads\C-Employee-List-Assignment\C-Employee-List-Assignment\WORKSPACE\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
