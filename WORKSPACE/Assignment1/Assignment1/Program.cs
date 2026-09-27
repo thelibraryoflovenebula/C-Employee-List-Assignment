@@ -17,6 +17,7 @@
  *  sept 22 3:01pm
  *  sept 23 12:30pm
  *  sept 25 12:57am
+ *  sept 26 9:42pm
  */
 
 using System;
@@ -127,8 +128,15 @@ namespace Assignment1
         }
 
 
-        /** read method
+        /** READ METHOD
+         * reads csv and initializes array needed to print employees
          * 
+         *  PARAMETERS:
+         *  - string DATAFILE -> the file of .csv empolees
+         * 
+         * helper functions:
+         * 1. declareArray()
+         * 2. parseTry()
          * 
          */
         public static void read(string DATAFILE)
@@ -152,14 +160,14 @@ namespace Assignment1
                     var values = line.Split(','); //splits the single line into array by ','
 
                     string nameTemp =           values[0];
-                    int numberTemp;              //value1
-                    decimal rateTemp;            //value2
-                    double hoursTemp;            //value3
+                    int numberTemp = 0;              //value1
+                    decimal rateTemp = 0;            //value2
+                    double hoursTemp= 0;            //value3
 
                     //INPUT VALIDATION FOR .csv FILE 
                     bool parseFail = false; //IF ANY PARSE ATTEMPTS FAIL, SWITCH THIS ON TO ADD ERROR
 
-                    parseTry(values, parseFail, numberTemp, rateTemp, hoursTemp);
+                    parseTry(values, out parseFail, out numberTemp, out rateTemp, out hoursTemp); // USING THE OUT KEYWORD TO PASS MANY LOOCAL VARIABLES, THIS IS NOT CHEATING I RESEARCHED THIS;SLDKFJS;DLFKJ
 
                     if (parseFail)
                     {
@@ -175,6 +183,11 @@ namespace Assignment1
 
         /** DECLARE ARRAY METHOD 
          *  first helper method for read() method
+         *  declares and initializes array size
+         *  
+         *  PARAM:
+         *  - StreamReader reader -> reader object for reading
+         *  - string DATAFILE -> the file of .csv empolees
          */
         private static void declareArray(StreamReader reader, string DATAFILE)
         {
@@ -189,41 +202,76 @@ namespace Assignment1
         }
 
         /** CSV ARRAY PARSING METHOD
+         *  Attempts to parse string variables into designated value types,
+         *  handles exceptions and boolean gates
+         * 
          *  second helper method for read() method
+         *  
+         *  OUT -> researched for my method, i am unsure if it is allowed but it was needed
+         *  due to modularization = returning many outputs and to work with local variables
+         *  
+         *  
+         *  PARAM:
+         *  - string[] values -> local string array for individual employee object, hosts all values
+         *  - bool parseFail -> boolean gate for any tryParse failures, addition to catch Exception
+         *  - int numberTemp -> temporary number variable
+         *  - decimal rateTemp -> temporary rate variable
+         *  - double hoursTemp -> temporary hours variable
+         *  
+         *  
          */
-        private static void parseTry(bool parseFail, int numberTemp, decimal rateTemp, double hoursTemp)
+        private static void parseTry(string[] values, out bool parseFail, out int numberTemp, out decimal rateTemp, out double hoursTemp)
         {
-            //number parsing
-            if (!int.TryParse(values[1], out numberTemp))
+            try
             {
-                parseFail = true;
-                numberTemp = 0;
-            }
+                parseFail = false;
 
-            //rate parsing
-            if (!decimal.TryParse(values[2], out rateTemp))
-            {
-                parseFail = true;
-                rateTemp = 0;
-            }
+                //number parsing
+                if (!int.TryParse(values[1], out numberTemp))
+                {
+                    parseFail = true;
+                    numberTemp = 0;
+                }
 
-            //hours parsing
-            if (!double.TryParse(values[3], out hoursTemp))
+                //rate parsing
+                if (!decimal.TryParse(values[2], out rateTemp))
+                {
+                    parseFail = true;
+                    rateTemp = 0;
+                }
+
+                //hours parsing
+                if (!double.TryParse(values[3], out hoursTemp))
+                {
+                    parseFail = true;
+                    hoursTemp = 0;
+                }
+
+
+            } catch (Exception ex)
             {
+                Console.Error.WriteLine("Error happened at: " + ex);
                 parseFail = true;
                 hoursTemp = 0;
-            }
+                rateTemp = 0;
+                numberTemp = 0;
 
-           
+
+            }
         }
 
 
 
 
         /** PRINT EMPLOYEE OBJECTS METHOD
+         *  prints employee objects in table format,
+         *  does not track sorting, only functions as print
+         * 
+         * 
+         * PARAM:
+         * - Employee[] list -> list of employee objects
+         * 
          *  
-         *  ONLY prints employees from array
-         *  array must be initialized and properly done before printed
          */
         public static void printEmployees(Employee[] list)
         {
@@ -238,7 +286,12 @@ namespace Assignment1
 
 
         /** SORTING METHOD 
-         * 
+         *  Holds switch cases for desired sorting.
+         *  Uses selection sort method and was learned by this video  (https://www.youtube.com/watch?v=EwjnF7rFLns)
+         *  
+         *  PARAM:
+         *  - string option -> the choice for specific cases, doesn't need input validation
+         *  - Employee[] list -> the designated array for employees to be sorted
          * 
          */
         public static void sort(string option, Employee[] list)
@@ -304,10 +357,8 @@ namespace Assignment1
                             }
                         }
                     }
-
                     break;
                 case "D": //hours double
-
                     for (int i = 0; i < list.Length; i++)
                     {
                         double minTemp;
@@ -328,7 +379,6 @@ namespace Assignment1
                     }
                     break;
                 case "E": //gross pay decimal
-
                     for (int i = 0; i < list.Length; i++)
                     {
                         decimal minTemp;
@@ -348,12 +398,9 @@ namespace Assignment1
                         }
                     }
                     break;
-
             }
         }
 
-        
-            
 
 
     }
@@ -368,8 +415,8 @@ namespace Assignment1
  * 3. ✓ Make print method for array
  * 4. ✓ (LEARN) sorting method(s) for each option 
  * 5. ✓ Make new print methods for sorted methods NOTNEEDED
- * 6. Modularize Read method
- * 7. Documentation
+ * 6. ✓ Modularize Read method
+ * 7. ✓ Documentation
  */
 
 

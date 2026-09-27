@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\",
+  "WorkspaceRootPath": "C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|c:\\users\\000964569\\downloads\\c-employee-list-assignment\\c-employee-list-assignment\\workspace\\assignment1\\assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|c:\\users\\patri\\desktop\\github projects\\c# employee list assignment\\workspace\\assignment1\\assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|solutionrelative:assignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|solutionrelative:Assignment1\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\employees.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\employees.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{F42F3F64-67A3-4388-8C7A-C7A3D0AADD32}|Assignment1\\Assignment1.csproj|solutionrelative:Assignment1\\employees.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "employees.txt",
-              "DocumentMoniker": "C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\employees.txt",
+              "DocumentMoniker": "C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\employees.txt",
               "RelativeDocumentMoniker": "Assignment1\\employees.txt",
-              "ToolTip": "C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\employees.txt",
+              "ToolTip": "C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\employees.txt",
               "RelativeToolTip": "Assignment1\\employees.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -40,23 +40,24 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Employee.cs",
+              "DocumentMoniker": "C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Employee.cs",
               "RelativeDocumentMoniker": "Assignment1\\Employee.cs",
-              "ToolTip": "C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Employee.cs",
+              "ToolTip": "C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Employee.cs",
               "RelativeToolTip": "Assignment1\\Employee.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-18T14:54:03.978Z"
+              "WhenOpened": "2026-09-18T14:54:03.978Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Program.cs",
               "RelativeDocumentMoniker": "Assignment1\\Program.cs",
-              "ToolTip": "C:\\Users\\000964569\\Downloads\\C-Employee-List-Assignment\\C-Employee-List-Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Program.cs",
+              "ToolTip": "C:\\Users\\patri\\Desktop\\GITHUB PROJECTS\\C# Employee List Assignment\\WORKSPACE\\Assignment1\\Assignment1\\Program.cs",
               "RelativeToolTip": "Assignment1\\Program.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAiwMEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-18T14:53:27.995Z",
               "EditorCaption": ""

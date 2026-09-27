@@ -21,7 +21,6 @@ namespace Assignment1
     {
     //ATTRIBUTES
 
-
         /** name variable*/
         private string name;
         /** employee number */
@@ -62,8 +61,8 @@ namespace Assignment1
 
         /** getter for employee hours [returns, int employee hours]*/
         public double GetHours(){return this.hours;}
-
-        public int GetNumber() { return this.number; }
+        /** getter for employee number [returns, int employee nummber] */
+        public int GetNumber(){return this.number;}
         /** getter for employee name [returns, string employee name]*/
         public string GetName(){return this.name;}
         /** getter for employee rate [returns, decimal employee rate ]*/
@@ -87,16 +86,28 @@ namespace Assignment1
             }
         }
 
-        /** setter for employee hours */
-        public void SetHours(double hours){this.hours = hours;}
-        /** setter for employee name */
-        public void SetName(string name){this.name = name;}
-        /** setter for employee number */
-        public void SetNumber(int number){this.number = number;}
-        /** setter for employee rate  */
+        /** setter for employee hours 
+         *  PARAM: 
+         *  - double hours -> number of desired hours to set to
+         */
+        public void SetHours(double hours){this.hours = hours; }
+        /** setter for employee name 
+         *  PARAM: 
+         *  - string name -> desired string to change to
+         */
+        public void SetName(string name){this.name = name; }
+        /** setter for employee number 
+         *  PARAM: 
+         *  - int number -> desired employee number to change to
+         */
+        public void SetNumber(int number){this.number = number; }
+        /** setter for employee rate  
+         *  PARAM: 
+         *  - decimal rate -> number of desired rate to change to
+         */
         public void SetRate(decimal rate){this.rate = rate;}
 
-        /** ToString [returns, formatted string]*/
+        /** ToString [returns, formatted string] */
         public override string ToString()
         {
             return $"{name} \t\t {number} \t ${rate:f2} \t {hours:F2} \t\t ${this.GetGross():F0}";
